@@ -7,8 +7,7 @@ const userSchema = new mongoose.Schema({
     password: { type: String, required: true },
     age: { type: Number, min: 0 }, // Ensure age is a non-negative number
     createdAt: { type: Date, default: Date.now } ,//Automatically set the creation date
-    resetPasswordTokenHash: String,
-    resetPasswordExpires: Date,
+    
 });
 
 const resetPasswordTokenSchema = new mongoose.Schema({
